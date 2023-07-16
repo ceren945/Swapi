@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "woo94TPYt1RGzDXrqBhQGWZWVQCHRP6qlE5ok7f9EP4=",
+  "Source": "StarWarsApi",
+  "BasePath": "_content/StarWarsApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
