@@ -442,11 +442,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ceren\\Desktop\\StarWars\\StarWarsApi\\StarWarsApi.csproj",
+      "projectUniqueName": "C:\\Users\\ceren\\Desktop\\SWApi\\StarWarsApi\\StarWarsApi.csproj",
       "projectName": "StarWarsApi",
-      "projectPath": "C:\\Users\\ceren\\Desktop\\StarWars\\StarWarsApi\\StarWarsApi.csproj",
+      "projectPath": "C:\\Users\\ceren\\Desktop\\SWApi\\StarWarsApi\\StarWarsApi.csproj",
       "packagesPath": "C:\\Users\\ceren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ceren\\Desktop\\StarWars\\StarWarsApi\\obj\\",
+      "outputPath": "C:\\Users\\ceren\\Desktop\\SWApi\\StarWarsApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ceren\\AppData\\Roaming\\NuGet\\NuGet.Config",

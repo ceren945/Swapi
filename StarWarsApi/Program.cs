@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Hosting;
@@ -23,6 +24,27 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
+}
+else
+{
+    app.UseExceptionHandler(errorApp =>
+    {
+        errorApp.Run(async context =>
+        {
+            context.Response.StatusCode = 500;
+            context.Response.ContentType = "application/json";
+
+            var errorFeature = context.Features.Get<IExceptionHandlerFeature>(); //bir hata oluþtuðunda bu hatayý almak ve hatanýn ayrýntýlarýný bir HTTP yanýtýnda döndürmek için kullanýlýr.
+            if (errorFeature != null)
+            {
+                var exception = errorFeature.Error;
+
+                // Create a JSON response with the details of the exception
+                var result = JsonSerializer.Serialize(new { error = exception.Message });
+                await context.Response.WriteAsync(result);
+            }
+        });
+    });
 }
 
 
